@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 4 - Laboratorio - Funciones y Eventos</title>
+    <link rel="stylesheet" href="./style/site.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator-header">
+            <h1>Calculadora Básica</h1>
+        </div>
+        <div class="calculator-body">
+            <div class="calculator-value">
+                <div class="blockA">
+                    <label for="valueA">Operador A:</label>
+                    <input id="valueA" name="valueA" type="text">   
+                </div>
+                <div class="buttom-calculator">
+                    <button id="buttonSum" name="sum">+</button>
+                    <button id="buttonRest" name="rest">-</button>
+                    <button id="buttonMultiply" name="multiply">x</button>
+                    <button id="buttonDivide" name="divide">/</button>
+                </div>
+                <div class="blockB">
+                    <label for="valueB">Operador B:</label>
+                    <input id="valueB" name="valueB" type="text">
+                </div>
+            </div>
+            <div class="calculator-result">
+                <h4 id="valueC">Resultado</h4>
+            </div>
+        </div>
+    </div>
+<script src="./js/app.js"></script>
+</body>
+</html>
