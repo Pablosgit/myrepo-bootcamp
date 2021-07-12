@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 4 - Laboratorio Extra - Funciones y Eventos</title>
+    <link rel="stylesheet" href="./style/site.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="./reserva-hotel.html">Ir a Ejercicio Reservas en un hotel.</a>
+    </div>
+    <div id="calculator-container" class="calculator-container">
+        <div class="calculator-header">
+            <h1>Calculadora Secuencial</h1>
+        </div>
+        <div class="calculator-body">
+            <div class="calculator-value">
+                <div class="blockA">
+                    <label for="valueInput">Introduce los números:</label>
+                    <input id="valueInput" autofocus name="valueInput" type="text">   
+                </div>
+                <div class="buttom-calculator">
+                    <button id="buttonSum" name="sum">+</button>
+                    <button id="buttonRest" name="rest">-</button>
+                    <button id="buttonMultiply" name="multiply">*</button>
+                    <button id="buttonDivide" name="divide">/</button>
+                    <button id="buttonEqual" name="divide">=</button>
+                </div>
+            </div>
+            <div class="calculator-result">
+                <h4 id="progreso-operacion" class="progreso-result">Resultado</h4>
+                <h2 id="resultado-parcial">0</h2>
+            </div>
+        </div>
+    </div>
+<script src="./js/calculadora-secuencial.js"></script>
+</body>
+</html>

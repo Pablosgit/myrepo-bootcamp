@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/site.css">
+    <title>Modulo 4 - Laboratorio Extra - Funciones y Eventos</title>
+</head>
+<body>
+    <div class="menu">
+        <a href="./index.html">Ir a Ejercicio Calculadora Secuencial.</a>
+    </div>
+    <div class="hotels-container">
+        <div class="hotels-header">
+            <h2>Reservas en un Hotel</h2>
+        </div>
+        <div class="hotels-body">
+            <div class="hotel-info">
+                <div class="hotel-data">
+                    <div class="hotel-name-container">
+                        <span id="hotel-name" class="hotel-name">Nombre</span>
+                    </div>
+                    <div class="hotel-start">
+                        <span>Categoría: </span>
+                        <span class="puntos" id="start"></span>
+                    </div>
+                    <div class="hotel-location-container">
+                        <span id="hotel-location" class="hotel-location">Localizacion</span>
+                    </div>
+                    <div class="hotel-description-container">
+                        <span id="hotel-description" class="hotel-description">Descripcion</span>
+                    </div>
+                    <div class="hotel-telephone-container">
+                        <span id="hotel-telephone" class="hotel-telephone">Telefono</span>
+                    </div>
+                </div>
+                <div class="hotel-imagen">
+                    <img id="hotel-imagen" src="" alt="Foto hotel" />
+                </div>
+            </div>
+            <div class="hotel-booking">
+                <div class="hotel-imput">
+                    <label for="tipoHotel">Elige el Hotel: </label>
+                    <select name="tipoHotel" id="tipoHotel" required>
+                        <option value="Lani" selected>Lani</option>
+                        <option value="Mencey">Mencey</option>
+                        <option value="Bahiazul">Bahiazul</option>
+                    </select>
+                </div>
+                <h5>Rellene los campos para completar la reserva:</h5>
+                <div class="hotel-imput">
+                    <label for="tipoHabitacion">Tipo de habitación:</label>
+                    <select name="tipoHabitacion" id="tipoHabitacion" required>
+                        <option value="Standard" selected>Standard</option>
+                        <option value="JuniorSuite">Junior Suite</option>
+                        <option value="Suite">Suite</option>
+                    </select>
+                </div>
+                <div class="hotel-imput">
+                    <label for="usoSPA">Uso del SPA:</label>
+                    <input type="checkbox" name="usoSPA" id="usoSPA">
+                </div>
+                <div class="hotel-imput">
+                    <label for="ocupaHabitacion">Ocupación habitación:</label>
+                    <select name="ocupaHabitacion" id="ocupaHabitacion" required>
+                        <option value="Individual" selected>Individual</option>
+                        <option value="Doble">Doble</option>
+                        <option value="Triple">Triple</option>
+                    </select>
+                </div>
+                <div class="hotel-imput">
+                    <label for="numNoches">Número de noches:</label>
+                    <input type="number" name="numNoches" min="1" id="numNoches" value="1">
+                </div>
+                <div class="hotel-imput">
+                    <label for="diaParking">Noches de parking:</label>
+                    <input type="number" name="diaParking" min="0" id="diaParking" value="0">
+                </div>
+                <div class="hotel-imput hotel-calcular">
+                    <button id="button-calcular" type="button">Calcular</button>
+                </div>
+                <div id="hotel-reserva" class="hotel-imput">
+                    <h5>Datos de la reserva:</h5>
+                    <div class="bloques-reserva">
+                        <div class="bloque1-reserva">
+                            <div class="hotel-reserva-name">
+                                <p id="reserva-name" class="reserva-name">Hotel:</p>
+                            </div>
+                            <div class="hotel-reserva-tipoHabitacion">
+                                <span id="reserva-tipoHabitacion" class="reserva-tipoHabitacion">Habitación:</span>
+                            </div>
+                            <div class="hotel-reserva-spa">
+                                <span id="reserva-spa" class="reserva-spa">Spa</span>
+                            </div>
+                            <div class="hotel-reserva-noches">
+                                <span id="reserva-noches" class="reserva-noches">Numero Noches</span>
+                            </div>
+                            <div class="hotel-reserva-parking">
+                                <span id="reserva-parking" class="reserva-parking">Parking</span>
+                            </div>
+                        </div>
+                        <div class="bloque2-reserva">
+                            <img id="habitacion-imagen" src="" alt="Foto habitacion hotel" />
+                        </div>
+                    </div>
+                    <div class="hotel-reserva-precio">
+                        <h4 id="reserva-precio" class="reserva-precio">Total</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/reserva-hotel.js"></script>
+</body>
+</html>
