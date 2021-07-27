@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.chopping-container{
+    width: 350px;
+    background-color: beige;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chopping-header{
+    text-align: center;
+}
+
+.chopping-container > div {
+    padding: 10px;
+    border-top: 0.5px solid #454545;
+}
+
+.product-unit{
+    width: 45px;
+    cursor: pointer;
+}
+
+.list-chopping-body{
+    text-align: right;
+    margin: 0;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.list-chopping-body li {
+    margin: 0 0 5px;
+}
+
+.chopping-action{
+    text-align: center;
+}
+
+.chopping-price{
+    text-align: right;
+}
+
+.item-price{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#chopping-price :first-child{
+    margin-bottom: 20px;
+}
+
+#chopping-price :last-child{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.chopping-buttom{
+    cursor: pointer;
+}
+
+.chopping-buttom:disabled{
+    cursor:not-allowed;
+}
+
